@@ -1,0 +1,70 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.infoBox:not(:last-child) {
+  /* margin-right: 15px; */
+}
+
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox--selected {
+  border-top: 10px solid greenyellow;
+}
+
+.infoBox--red {
+  border-color: red;
+}
+
+.infoBox__cases--green {
+  color: lightgreen;
+}
+
+.infoBox--grey {
+  border-color: grey;
+}
+
+.infoBox__cases--grey {
+  color: grey;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  margin-top: 15px !important;
+}
+
+.app__stats {
+  margin-right: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: grid;
+  /* width: 300px; */
+  grid-gap: 25px;
+  padding: 30px 0px 26px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.app__card {
+  height: 105px;
+}
+
+@media (max-width: 768px) {
+  .app__stats {
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: grid;
+    /* width: 300px; */
+    grid-gap: 25px;
+    padding: 30px 0px 26px;
+
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
